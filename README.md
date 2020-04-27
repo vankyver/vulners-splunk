@@ -1,4 +1,4 @@
-#Splunk - Vulners App
+# Splunk - Vulners App
 
 Vulners Application for Splunk allows you to collect information about your system packages and their vulnerabilities
 ![](./docs/dashboard.png)
@@ -7,7 +7,7 @@ Vulners Application for Splunk allows you to collect information about your syst
 index=vulners | lookup vulnerslook os version package | stats list(cve) as cve values(fix) as fix by package 
 ```
 
-##Installation
+## Installation
 
 Current [Distro](./apps/vulners_src/result/vulners-lookup-0.0.1.tar.gz) contains both Dashboard and Forwarder installations
 
